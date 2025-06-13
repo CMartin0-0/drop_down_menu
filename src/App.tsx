@@ -1,12 +1,27 @@
-import './App.css'
+import './App.css';
+import DropDownMenu from './DropDownMenu';
 
 function App() {
-  
-  return (
-    <>
-    
-    </>
-  )
+	const buttonsArr = [
+		{
+			label: 'Home',
+			onClick: null,
+		},
+		{
+			label: 'About',
+			onClick: null,
+		},
+		{
+			label: 'Contact',
+			onClick: null,
+		},
+	];
+
+	return (
+		<>
+			<DropDownMenu buttons={buttonsArr} toggleLabel={'Toggle'} />
+		</>
+	);
 }
 
-export default App
+export default App;
